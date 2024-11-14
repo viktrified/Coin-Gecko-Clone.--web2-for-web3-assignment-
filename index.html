@@ -331,8 +331,10 @@
           <thead>
             <tr class="table-row-heading">
               <th></th>
-              <th><i class="fa-solid fa-caret-up"></i>#</th>
-              <th>Coin</th>
+              <th class="move-left test2">
+                <i class="fa-solid fa-caret-up"></i>#
+              </th>
+              <th class="move-left">Coin</th>
               <th>Price</th>
               <th>1h</th>
               <th>24h</th>
@@ -344,14 +346,24 @@
           </thead>
           <tbody>
             <tr class="table-row-items">
-              <td>
+              <td class="test2 wrong">
                 <i class="fa-regular fa-star"></i>
               </td>
-              <td><span>1</span></td>
-              <td>
-                <span><img src="images/bitcoin.webp" alt="" /></span>
-                <div><span>Bitcoin</span><span>BTC</span></div>
-                <span>Buy</span>
+              <td class="move-right"><span>1</span></td>
+              <td class="table-words">
+                <div class="bitcoin-section">
+                  <span
+                    ><img
+                      src="images/bitcoin.webp"
+                      alt=""
+                      class="small-img"
+                      width="25"
+                      height="25"
+                  /></span>
+                  <span class="bitcoin">Bitcoin</span
+                  ><span class="btc">BTC</span>
+                </div>
+                <div class="buy">Buy</div>
               </td>
               <td>
                 <span>$76,300.90</span>
@@ -378,172 +390,288 @@
             </tr>
           </tbody>
         </table>
-        <div>
-          <span>Showing 1 to 100 of 15109 results</span>
-          <div>
+        <div class="display-flex">
+          <span class="global showing">Showing 1 to 100 of 15109 results</span>
+          <div class="display-flex gap">
             <span><i class="fa-solid fa-chevron-left"></i></span>
-            <span>1</span>
+            <span class="lightgreen-background one">1</span>
             <span>2</span>
             <span>...</span>
             <span>152</span>
             <span> <i class="fa-solid fa-chevron-right"></i></span>
           </div>
-          <div>
-            <span>Rows</span>
-            <div>
+          <div class="display-flex rows">
+            <span class="global">Rows</span>
+            <div class="ash-background">
               <span>100</span>
               <span><i class="fa-solid fa-chevron-down"></i></span>
             </div>
           </div>
         </div>
-        <p>Frequently Asked Questions <a href="#">Show</a></p>
+        <p class="showing global frequently">
+          Frequently Asked Questions <a href="#" class="read-more">Show</a>
+        </p>
       </section>
       <section>
-        <h2>Latest Crypto News</h2>
         <div>
-          <div>
-            <img src="images/first-news.webp" alt="first-news" />
-            <p>
-              Interview With 3Commas CEO Yuiry Sorokin On Automated Trading,
-              Tokenization, And What's Next For Crypto Adoption
-            </p>
-            <p>Bitcoinist</p>
-            <p>5 minutes ago</p>
+          <h2 class="latest">Latest Crypto News</h2>
+          <div class="display-flex all-news">
+            <div class="each-news">
+              <div>
+                <img
+                  src="images/first-news.webp"
+                  alt="first-news"
+                  width="290"
+                  height="140"
+                  class="news-img"
+                />
+                <p class="news-p">
+                  Interview With 3Commas CEO Yuiry Sorokin On Automated Trading,
+                  Tokenization, And What's Next For Crypto Adoption
+                </p>
+              </div>
+              <div>
+                <p class="not-black">Bitcoinist</p>
+                <p class="global">5 minutes ago</p>
+              </div>
+            </div>
+            <div class="each-news second-news">
+              <div>
+                <img
+                  src="images/second-news.webp"
+                  alt="second-news"
+                  width="290"
+                  height="140"
+                  class="news-img"
+                />
+                <p class="news-p">
+                  Coinbase Expands cbBTC to Solana, Boosting DeFi Options for
+                  Bitcoin Holders
+                </p>
+              </div>
+              <div>
+                <p class="not-black">CryptoPotato</p>
+                <p class="global">5 minutes ago</p>
+              </div>
+            </div>
+            <div class="each-news third-news">
+              <div>
+                <img
+                  src="images/third-news.webp"
+                  alt="first-news"
+                  width="290"
+                  height="140"
+                  class="news-img"
+                />
+                <p class="news-p">
+                  BlackRock Bitcoin ETF Net Assets Pass $23B After 20% Q3 Surge
+                </p>
+              </div>
+              <div>
+                <p class="not-black">Watcher Guru</p>
+                <p class="global">5 minutes ago</p>
+              </div>
+            </div>
+            <div class="each-news fourth-news">
+              <div>
+                <img
+                  src="images/fourth-news.webp"
+                  alt="first-news"
+                  width="290"
+                  height="140"
+                  class="news-img"
+                />
+                <p class="news-p">
+                  CATZILLA is poised to dethrone DOGE and PEPE as meme coin
+                  leader
+                </p>
+              </div>
+              <div>
+                <p class="not-black">Crypto.news</p>
+                <p class="global">7 minutes ago</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="images/second-news.webp" alt="second-news" />
-            <p>
-              Coinbase Expands cbBTC to Solana, Boosting DeFi Options for
-              Bitcoin Holders
-            </p>
-            <p>CryptoPotato</p>
-            <p>5 minutes ago</p>
-          </div>
-          <div>
-            <img src="images/third-news.webp" alt="first-news" />
-            <p>BlackRock Bitcoin ETF Net Assets Pass $23B After 20% Q3 Surge</p>
-            <p>Watcher Guru</p>
-            <p>5 minutes ago</p>
-          </div>
-          <div>
-            <img src="images/fourth-news.webp" alt="first-news" />
-            <p>
-              CATZILLA is poised to dethrone DOGE and PEPE as meme coin leader
-            </p>
-            <p>Crypto.news</p>
-            <p>7 minutes ago</p>
-          </div>
+          <div class="ash-background see-more">See More News</div>
         </div>
-        <div>See More News</div>
-        <h2>Featured Articles</h2>
         <div>
-          <div>
-            <img src="images/fifth-news.webp" alt="first-news" />
-            <p>Guides</p>
-            <p>
-              What Are Crypto Prediction Markets and List of Prediction Markets
-            </p>
-            <p>Hans Be</p>
-            <p><i class="fa-regular fa-star"></i>3.83(6 votes)</p>
-          </div>
-          <div>
-            <img src="images/sixth-news.webp" alt="second-news" />
-            <p>Trading</p>
-            <p>How to Trade Memecoins in 2024</p>
-            <p>Joel Zhao</p>
-            <p><i class="fa-regular fa-star"></i>4.33(46 votes)</p>
-          </div>
-          <div>
-            <img src="images/seventh-news.webp" alt="first-news" />
-            <p>Guides</p>
+          <h2 class="latest">Featured Articles</h2>
+          <div class="display-flex all-news">
+            <div class="each-article">
+              <div>
+                <img
+                  src="images/fifth-news.webp"
+                  alt="first-news"
+                  width="290"
+                  height="140"
+                  class="news-img"
+                />
+                <p class="not-black">Guides</p>
+                <p class="news-p">
+                  What Are Crypto Prediction Markets and List of Prediction
+                  Markets
+                </p>
+              </div>
+              <div>
+                <p class="not-black">Hans Be</p>
+                <p class="star-text">
+                  <i class="nav-icon star fa-solid fa-star"></i
+                  ><span>3.83 (6 votes)</span>
+                </p>
+              </div>
+            </div>
+            <div class="each-article sixth-news">
+              <div>
+                <img
+                  src="images/sixth-news.webp"
+                  alt="second-news"
+                  width="290"
+                  height="140"
+                  class="news-img"
+                />
+                <p class="not-black">Trading</p>
+                <p class="news-p">How to Trade Memecoins in 2024</p>
+              </div>
+              <div>
+                <p class="not-black">Joel Zhao</p>
+                <p class="star-text">
+                  <i class="nav-icon star fa-solid fa-star"></i
+                  ><span>4.45 (46 votes)</span>
+                </p>
+              </div>
+            </div>
+            <div class="each-article seventh-news">
+              <div>
+                <img
+                  src="images/seventh-news.webp"
+                  alt="first-news"
+                  width="290"
+                  height="140"
+                  class="news-img"
+                />
+                <p class="not-black">Guides</p>
 
-            <p>What Are Meme Coins and Types of Meme Coins</p>
-            <p>Joel Agbo</p>
-            <p><i class="fa-regular fa-star"></i>3.89(27 votes)</p>
-          </div>
-          <div>
-            <img src="images/eight-news.webp" alt="first-news" />
-            <p>Guides</p>
+                <p class="news-p">
+                  What Are Meme Coins and Types of Meme Coins
+                </p>
+              </div>
+              <div>
+                <p class="not-black">Joel Agbo</p>
+                <p class="star-text">
+                  <i class="nav-icon star fa-solid fa-star"></i
+                  ><span>5.83 (8 votes)</span>
+                </p>
+              </div>
+            </div>
+            <div class="each-article eight-news">
+              <div>
+                <img
+                  src="images/eight-news.webp"
+                  alt="first-news"
+                  width="290"
+                  height="140"
+                  class="news-img"
+                />
+                <p class="not-black">Guides</p>
 
-            <p>DeFi Trends to Watch in 2024</p>
-            <p>Joel Zhao</p>
-            <p><i class="fa-regular fa-star"></i>4.67(27 votes)</p>
+                <p class="news-p">DeFi Trends to Watch in 2024</p>
+              </div>
+              <div>
+                <p class="not-black">Joel Zhao</p>
+                <p class="star-text">
+                  <i class="nav-icon star fa-solid fa-star"></i
+                  ><span>4.83 (27 votes)</span>
+                </p>
+              </div>
+            </div>
           </div>
+          <div class="ash-background see-more">See more articles</div>
         </div>
-        <div>See more articles</div>
       </section>
       <footer>
-        <div>
-          <div><img src="images/coingecko-logo.webp" alt="" /></div>
-          <p>
-            CoinGecko provides a fundamental analysis of the crypto market. In
-            addition to tracking price, volume and market capitalisation,
-            CoinGecko tracks community growth, open-source code development,
-            major events and on-chain metrics.
-          </p>
+        <div class="display-flex">
+          <div class="geck-icon-div">
+            <div>
+              <img
+                src="images/coingecko-logo.webp"
+                alt=""
+                width="150"
+                height="40"
+                class="geck-icon"
+              />
+            </div>
+            <p class="global">
+              CoinGecko provides a fundamental analysis of the crypto market. In
+              addition to tracking price, volume and market capitalisation,
+              CoinGecko tracks community growth, open-source code development,
+              major events and on-chain metrics.
+            </p>
+          </div>
+          <div class="display-flex">
+            <ul>
+              <li class="not-black">Resources</li>
+              <a href="#">
+                <li>Crypto News</li>
+              </a>
+              <a href="#"><li>Bitcoin Treasury</li></a>
+              <a href="#"><li>Crypto Heatmap</li></a>
+              <a href="#"><li>Crypto API</li></a>
+            </ul>
+            <ul>
+              <li class="not-black">Donations</li>
+              <a href="#">
+                <li>Bitcoin</li>
+              </a>
+              <a href="#"><li>Ethereum</li></a>
+            </ul>
+            <ul>
+              <li class="not-black">Support</li>
+              <a href="#">
+                <li>Request Form</li>
+              </a>
+              <a href="#"><li>Advertising</li></a>
+              <a href="#"><li>Candy Rewards Listing</li></a>
+              <a href="#"><li>Help Center</li></a>
+              <a href="#"><li>Bug Bounty</li></a>
+              <a href="#"><li>FAQ</li></a>
+            </ul>
+            <ul>
+              <li class="not-black">About CoinGecko</li>
+              <a href="#">
+                <li>About Us</li>
+              </a>
+              <a href="#"
+                ><li>Careers <span>Join Us</span></li></a
+              >
+              <a href="#"><li>Company Blog</li></a>
+              <a href="#"><li>Branding Guide</li></a>
+              <a href="#"><li>Methodology</li></a>
+              <a href="#"><li>Disclaimer</li></a>
+              <a href="#"><li>Terms of Service</li></a>
+              <a href="#"><li>Privacy Policy</li></a>
+              <a href="#"><li>Ad Policy</li></a>
+              <a href="#"><li>Cookie Preference</li></a>
+            </ul>
+            <ul>
+              <li class="not-black">Community</li>
+              <a href="#">
+                <li>X/Twitter</li>
+              </a>
+              <a href="#"><li>Telegram Chat</li></a>
+              <a href="#"><li>Telegram News</li></a>
+              <a href="#"><li>Instagram</li></a>
+              <a href="#"><li>Reddit</li></a>
+              <a href="#"><li>Discord</li></a>
+              <a href="#"><li>Facebook</li></a>
+              <a href="#"><li>Youtube</li></a>
+              <a href="#"><li>TikTok</li></a>
+            </ul>
+          </div>
         </div>
-        <ul>
-          <li>Resources</li>
-          <a href="#">
-            <li>Crypto News</li>
-          </a>
-          <a href="#"><li>Bitcoin Treasury</li></a>
-          <a href="#"><li>Crypto Heatmap</li></a>
-          <a href="#"><li>Crypto API</li></a>
-        </ul>
-        <ul>
-          <li>Donations</li>
-          <a href="#">
-            <li>Bitcoin</li>
-          </a>
-          <a href="#"><li>Ethereum</li></a>
-        </ul>
-        <ul>
-          <li>Support</li>
-          <a href="#">
-            <li>Request Form</li>
-          </a>
-          <a href="#"><li>Advertising</li></a>
-          <a href="#"><li>Candy Rewards Listing</li></a>
-          <a href="#"><li>Help Center</li></a>
-          <a href="#"><li>Bug Bounty</li></a>
-          <a href="#"><li>FAQ</li></a>
-        </ul>
-        <ul>
-          <li>About CoinGecko</li>
-          <a href="#">
-            <li>About Us</li>
-          </a>
-          <a href="#"
-            ><li>Careers <span>Join Us</span></li></a
-          >
-          <a href="#"><li>Company Blog</li></a>
-          <a href="#"><li>Branding Guide</li></a>
-          <a href="#"><li>Methodology</li></a>
-          <a href="#"><li>Disclaimer</li></a>
-          <a href="#"><li>Terms of Service</li></a>
-          <a href="#"><li>Privacy Policy</li></a>
-          <a href="#"><li>Ad Policy</li></a>
-          <a href="#"><li>Cookie Preference</li></a>
-        </ul>
-        <ul>
-          <li>Community</li>
-          <a href="#">
-            <li>X/Twitter</li>
-          </a>
-          <a href="#"><li>Telegram Chat</li></a>
-          <a href="#"><li>Telegram News</li></a>
-          <a href="#"><li>Instagram</li></a>
-          <a href="#"><li>Reddit</li></a>
-          <a href="#"><li>Discord</li></a>
-          <a href="#"><li>Facebook</li></a>
-          <a href="#"><li>Youtube</li></a>
-          <a href="#"><li>TikTok</li></a>
-        </ul>
-        <div>
+        <div class="display-flex intrested-section">
           <div>
-            <p>Interested to stay up-to-date with cryptocurrencies?</p>
-            <p>
+            <p class="not-black interested">Interested to stay up-to-date with cryptocurrencies?</p>
+            <p class="global">
               Get the latest crypto news, updates, and reports by subscribing to
               our free newsletter.
             </p>
@@ -555,15 +683,15 @@
             <span><button>Subcribe</button></span>
           </div>
         </div>
-        <div>
+        <div class="display-flex">
           <div>&copy; 2024 CoinGecko. All Rights Reserved.</div>
           <div>
-            <span><img src="images/google_play_store.svg" alt="" /></span
-            ><span><img src="images/apple_app_store.svg" alt="" /></span>
+            <span><img src="images/google_play_store.svg" alt="" width="150" height="50"/></span
+            ><span><img src="images/apple_app_store.svg" alt="" width="150" height="50"/></span>
           </div>
         </div>
-        <div>
-          <a href="#">IMPORTANT DISCLAIMER:</a>All content provided herein our
+        <div class="global">
+          <a href="#" class="read-more">IMPORTANT DISCLAIMER:</a>All content provided herein our
           website, hyperlinked sites, associated applications, forums, blogs,
           social media accounts and other platforms (“Site”) is for your general
           information only, procured from third party sources. We make no
@@ -578,9 +706,9 @@
           advisor before making any decision. No content on our Site is meant to
           be a solicitation or offer.
         </div>
-        <div>
-          <span><img src="images/gecko-fixed.webp" alt="" /></span
-          ><span><i class="fa-solid fa-arrow-up-from-bracket"></i></span>
+        <div class="display-column fixed">
+          <span><img src="images/gecko-fixed.webp" alt="" width="40" class="fixed-gecko"/></span
+          ><span><i class="fa-solid fa-arrow-up-from-bracket ash-background fixed-arrow"></i></span>
         </div>
       </footer>
     </div>
