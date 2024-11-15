@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coingecko Clone</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/802757136e.js"
       crossorigin="anonymous"
@@ -14,54 +22,70 @@
     <div id="container">
       <header>
         <div class="top-menu">
-          <div class="right-top-menu">
-            <span class="top-menu-items"> Coins: <a href="#">15,109</a></span>
-            <span class="top-menu-items">
-              Exchanges: <a href="#">1,148</a></span
-            >
-            <span class="top-menu-items">
-              Market Cap: <a href="#" class="top-menu-space">$2.695T</a
-              ><span class="green-up"
-                ><i class="fa-solid fa-caret-up"></i>0.9%</span
-              ></span
-            >
-            <span class="top-menu-items">
-              24h Vol: <a href="#">$169.468B</a></span
-            >
-            <span class="top-menu-items">
-              Dominance: <a href="#" class="top-menu-space">BTC 56.0%</a
-              ><a href="#">ETH 13.1%</a></span
-            >
-            <span class="top-menu-items"
-              ><i class="fa-brands fa-ethereum"></i> Gas:
-              <a href="#">16.428 GWEI</a></span
-            >
-          </div>
-          <div class="left-top-menu">
-            <button class="setting-btn">
-              <i class="fa-solid fa-gear"></i>
-            </button>
-            <button class="login-btn"><strong>Login</strong></button>
-            <button class="sign-up-btn"><strong>Sign up</strong></button>
-          </div>
-        </div>
-        <nav>
-          <div class="nav-list">
+          <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
             <div>
               <img
                 src="images/coingecko-logo.webp"
                 alt=""
                 width="150"
                 height="40"
+                class="icon-gecko"
               />
             </div>
-            <div class="nav-list-items">
-              <div><a href="#">Cryptocurrencies</a></div>
-              <div><a href="#">Exchanges</a></div>
-              <div><a href="#">NFT</a></div>
-              <div><a href="#">Learn</a></div>
-              <div><a href="#">Products</a></div>
+          </div>
+
+          <ul id="right-top-menu">
+            <li>Coins:<a href="#">15,109</a></li>
+            <li>Exchanges:<a href="#">1,148</a></li>
+            <li>
+              Market Cap:<a href="#" class="top-menu-space">$2.695T</a
+              ><span class="green-up"
+                ><i class="fa-solid fa-caret-up"></i>0.9%</span
+              >
+            </li>
+            <li>24h Vol:<a href="#">$169.468B</a></li>
+            <li>
+              Dominance:<a href="#" class="top-menu-space">BTC 56.0%</a
+              ><a href="#">ETH 13.1%</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-ethereum"></i> Gas:
+              <a href="#">16.428 GWEI</a>
+            </li>
+          </ul>
+          <div class="left-top-menu">
+            <button class="setting-icon login-btn">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+            <button class="setting-icon login-btn">
+              <strong>Login</strong>
+            </button>
+            <button class="sign-up-btn"><strong>Sign up</strong></button>
+            <button class="get-app">
+              <i class="fa-solid fa-qrcode"></i><strong>Get App</strong>
+            </button>
+          </div>
+        </div>
+
+        <nav>
+          <div class="display-flex nav-items">
+            <div>
+              <img
+                src="images/coingecko-logo.webp"
+                alt=""
+                width="150"
+                height="40"
+                class="icon-gecko"
+              />
             </div>
+            <ul class="nav-list-items">
+              <li><a href="#">Cryptocurrencies</a></li>
+              <li><a href="#">Exchanges</a></li>
+              <li><a href="#">NFT</a></li>
+              <li><a href="#">Learn</a></li>
+              <li><a href="#">Products</a></li>
+            </ul>
           </div>
           <div class="nav-right">
             <div class="nav-right-items">
@@ -69,7 +93,7 @@
                 src="images/candy_notification.svg"
                 alt=""
                 width="15"
-                height="20"
+                height="18"
                 class="candy-icon"
               /><span class="candy">Candy</span>
             </div>
@@ -77,10 +101,11 @@
               <i class="nav-icon star fa-solid fa-star"></i
               ><span class="portfolio">Portfolio</span>
             </div>
-            <div>
-              <i class="fa-solid fa-magnifying-glass nav-icon"></i
-              ><input type="text" placeholder="search" /><span
-                ><i class="fa-solid fa-slash"></i
+            <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i
+              ><input type="text" placeholder="Search" class="input" /><span
+                class="slash-bg"
+                ><i class="fa-solid fa-slash slash"></i
               ></span>
             </div>
           </div>
@@ -670,7 +695,9 @@
         </div>
         <div class="display-flex intrested-section">
           <div>
-            <p class="not-black interested">Interested to stay up-to-date with cryptocurrencies?</p>
+            <p class="not-black interested">
+              Interested to stay up-to-date with cryptocurrencies?
+            </p>
             <p class="global">
               Get the latest crypto news, updates, and reports by subscribing to
               our free newsletter.
@@ -686,29 +713,49 @@
         <div class="display-flex">
           <div>&copy; 2024 CoinGecko. All Rights Reserved.</div>
           <div>
-            <span><img src="images/google_play_store.svg" alt="" width="150" height="50"/></span
-            ><span><img src="images/apple_app_store.svg" alt="" width="150" height="50"/></span>
+            <span
+              ><img
+                src="images/google_play_store.svg"
+                alt=""
+                width="150"
+                height="50" /></span
+            ><span
+              ><img
+                src="images/apple_app_store.svg"
+                alt=""
+                width="150"
+                height="50"
+            /></span>
           </div>
         </div>
         <div class="global">
-          <a href="#" class="read-more">IMPORTANT DISCLAIMER:</a>All content provided herein our
-          website, hyperlinked sites, associated applications, forums, blogs,
-          social media accounts and other platforms (“Site”) is for your general
-          information only, procured from third party sources. We make no
-          warranties of any kind in relation to our content, including but not
-          limited to accuracy and updatedness. No part of the content that we
-          provide constitutes financial advice, legal advice or any other form
-          of advice meant for your specific reliance for any purpose. Any use or
-          reliance on our content is solely at your own risk and discretion. You
-          should conduct your own research, review, analyse and verify our
-          content before relying on them. Trading is a highly risky activity
-          that can lead to major losses, please therefore consult your financial
-          advisor before making any decision. No content on our Site is meant to
-          be a solicitation or offer.
+          <a href="#" class="read-more">IMPORTANT DISCLAIMER:</a>All content
+          provided herein our website, hyperlinked sites, associated
+          applications, forums, blogs, social media accounts and other platforms
+          (“Site”) is for your general information only, procured from third
+          party sources. We make no warranties of any kind in relation to our
+          content, including but not limited to accuracy and updatedness. No
+          part of the content that we provide constitutes financial advice,
+          legal advice or any other form of advice meant for your specific
+          reliance for any purpose. Any use or reliance on our content is solely
+          at your own risk and discretion. You should conduct your own research,
+          review, analyse and verify our content before relying on them. Trading
+          is a highly risky activity that can lead to major losses, please
+          therefore consult your financial advisor before making any decision.
+          No content on our Site is meant to be a solicitation or offer.
         </div>
         <div class="display-column fixed">
-          <span><img src="images/gecko-fixed.webp" alt="" width="40" class="fixed-gecko"/></span
-          ><span><i class="fa-solid fa-arrow-up-from-bracket ash-background fixed-arrow"></i></span>
+          <span
+            ><img
+              src="images/gecko-fixed.webp"
+              alt=""
+              width="40"
+              class="fixed-gecko" /></span
+          ><span
+            ><i
+              class="fa-solid fa-arrow-up-from-bracket ash-background fixed-arrow"
+            ></i
+          ></span>
         </div>
       </footer>
     </div>
